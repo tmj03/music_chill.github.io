@@ -137,16 +137,7 @@
                             </div>
                         </div>
                         <span class="theme">Chủ đề</span>
-                    </div>
-                    <div class="nav__item  nav__item-hover--upload">
-                        <div class="nav__item-border">
-                            <div class="nav__item-icon">
-                                <i class="ti-export"></i>
-                                
-                            </div>
-                        </div>
-                        <span class="upload">Tải lên</span>
-                    </div>
+                    </div>               
                     <div class="nav__item  nav__item-hover--setting">
                         <div class="nav__item-border">
                             <div class="nav__item-icon">
@@ -163,7 +154,7 @@
                 </div>
             </div>
         </div>
-
+    
         <!-- CONTENT  -->
         <div class="container">
             <ul class="container__player">
@@ -191,12 +182,22 @@
                             </ul>
                         </div>
                         <div class="container__player-song">
-                            <div class="container__player-song--box">
-                                <span class="container__player-song--icon">
-                                    <i class="fa-solid fa-play"></i>
-                                </span>
-                                <span class="container__player-music--playing">TIẾP TỤC PHÁT</span>
+                            <div class="container__player-song--box  playIng_song">
+                                <div class="playIng_song-item playing">
+
+                                    <span class="container__player-song--icon">
+                                        <i class="fa-solid fa-play"></i>
+                                    </span>
+                                    <span class="container__player-music--playing">TIẾP TỤC PHÁT</span>
+                                </div>
+                                <div class="playIng_song-stop">
+                                    <span class="container__player-song--icon">
+                                        <i class="ti-control-pause"></i>
+                                    </span>
+                                    <span class="container__player-music--playing">DỪNG</span>
+                                </div>
                             </div>
+
                         </div>
                         <div class="container__player-song">
                             <div class="container__favorite">
@@ -238,7 +239,16 @@
             <div class="clear"></div>
         </div>
         <div class="sound-bar">
-            <ul class="music-player">
+            <div class="infor_player">
+                <img src="./assets/Alan_walker/img_music/img_song1/Faded.png" alt="" class="infor_player-img">
+                <div class="infor_player-music">
+                    <div class="infor_player-name">Faded</div>
+                    <div class="infor_player-author">Alan Walker</div>
+                </div>
+
+            </div>
+            
+            <ul class="music-player">          
                 <li class="music-player-item">
                     <span class="music-icon choose-play">
                         <i class="fa-solid fa-shuffle"></i>
@@ -287,6 +297,7 @@
     </div>
 
     <script src="./assets/script/main.js"></script>
+
     
 </body>
 </html>

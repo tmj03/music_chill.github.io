@@ -1,5 +1,5 @@
 :root {
-    --text-color: #333;
+    --text-color: #ccc;
     --while-color: #fff;
     --color-main: #1c1c1c;
 }
@@ -52,13 +52,22 @@ html {
 .category__item {
     padding: 20px;
     list-style: none;
+    cursor: pointer;
+}
+.category__item:hover .category__item-link {
+    color: #8a8888;
 }
 
 .category__item-link {
     font-size: 1.4rem;
     font-weight: 500;
     text-decoration: none;
-    color: #ccc;
+    color: var(--text-color);
+}
+
+.category__icon {
+    font-size: 1.4rem;
+    color: #701a9c;
 }
 
 
@@ -282,6 +291,12 @@ html {
     border-bottom: 1px solid #272727;
     padding: 10px;
     justify-content: space-between;
+    cursor: pointer;
+}
+
+.Song.active {
+    background-color: #343434;
+    color: #ccc;
 }
 
 .song__infor {
@@ -343,6 +358,7 @@ html {
     margin: auto;
     line-height: 2.6;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .container__player-song--icon {
@@ -390,6 +406,8 @@ html {
     right: 0;
     left: 0;
     height: 90px;
+    display: flex;
+    /* justify-content: space-around; */
 }
 
 .music-player {
@@ -417,9 +435,15 @@ html {
     display: none;
 }
 
+.playIng_song-stop.playing,
+.playIng_song-item.playing,
 .played.playing,
 .player.playing{
     display: block;
+}
+.playIng_song-stop,
+.playIng_song-item {
+    display: none;
 }
 
 .choose-play {
@@ -442,6 +466,8 @@ html {
     border-radius: 50px;
 }
 
+
+ 
   
  .progress::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -457,9 +483,22 @@ html {
     height: 3px;
     background: #ccc;
     cursor: pointer;
+} 
+
+
+/* infor chạy nhạc */
+.infor_player{
+    display: flex;
+    font-size: 10px;
+    margin: 24px 242px;
+    color: #ccc;
 }
 
-
+.infor_player-img {
+    width: 42px;
+    border-radius: 4px;
+    margin: 0 8px;
+}
   
 
 
