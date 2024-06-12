@@ -6,7 +6,7 @@
     width: 300px;
     height: 200px;
     display: block;
-    background: url('/assets/Alan_walker/alan-walker1.jpg') top center / cover no-repeat;
+    background: url('../Alan_walker/alan-walker1.jpg') top center / cover no-repeat;
     border-radius: 3px;
     cursor: pointer;
 }
