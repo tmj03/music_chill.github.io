@@ -1,0 +1,10 @@
+.container_author-items {
+    margin: 0 20px;
+}
+.container_author-items.alan-walker {
+    width: 300px;
+    height: 200px;
+    background: url('/assets/Alan_walker/alan-walker1.jpg') top center / cover no-repeat;
+    border-radius: 3px;
+    cursor: pointer;
+}
